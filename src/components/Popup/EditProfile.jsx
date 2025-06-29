@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 // ===== src/components/Popup/EditProfile.jsx =====
 import { useState, useContext, useEffect } from 'react';
 import CurrentUserContext from '../../contexts/CurrentUserContext';
@@ -144,6 +145,7 @@ export default function EditProfile({ isLoading }) {
       </button>
       
       {/* Debug info - remover em produção */}
+      // eslint-disable-next-line no-undef
       {process.env.NODE_ENV === 'development' && (
         <div style={{fontSize: '12px', color: '#666', marginTop: '10px'}}>
           Debug: {hasChanges ? '✅ Há alterações' : '❌ Sem alterações'} 
